@@ -10,10 +10,9 @@
 		44A42F839B1B65438252994C /* Pods_AstanaTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C87C0C3D4430A51A4ADC2C /* Pods_AstanaTap.framework */; };
 		4F00ED842B615A0200C46574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00ED832B615A0200C46574 /* AppDelegate.swift */; };
 		4F00ED862B615A0200C46574 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00ED852B615A0200C46574 /* SceneDelegate.swift */; };
-		4F00ED882B615A0200C46574 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00ED872B615A0200C46574 /* ViewController.swift */; };
-		4F00ED8B2B615A0200C46574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F00ED892B615A0200C46574 /* Main.storyboard */; };
-		4F00ED8D2B615A0400C46574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F00ED8C2B615A0400C46574 /* Assets.xcassets */; };
 		4F00ED902B615A0400C46574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F00ED8E2B615A0400C46574 /* LaunchScreen.storyboard */; };
+		4F2D29DD2B62EF8F0047F308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F00ED8C2B615A0400C46574 /* Assets.xcassets */; };
+		4FDAA8712B63E8AF00F60BF5 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FDAA8702B63E8AF00F60BF5 /* countries.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +21,10 @@
 		4F00ED802B615A0200C46574 /* AstanaTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstanaTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F00ED832B615A0200C46574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F00ED852B615A0200C46574 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4F00ED872B615A0200C46574 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4F00ED8A2B615A0200C46574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F00ED8C2B615A0400C46574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F00ED8F2B615A0400C46574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F00ED912B615A0400C46574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDAA8702B63E8AF00F60BF5 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		82C87C0C3D4430A51A4ADC2C /* Pods_AstanaTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstanaTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +46,6 @@
 				4665B9FAE9EA02DCFE52DC1D /* Pods-AstanaTap.debug.xcconfig */,
 				3DAAF8C3A5B50BD5173A7F5E /* Pods-AstanaTap.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +70,22 @@
 		4F00ED822B615A0200C46574 /* AstanaTap */ = {
 			isa = PBXGroup;
 			children = (
-				4F00ED832B615A0200C46574 /* AppDelegate.swift */,
-				4F00ED852B615A0200C46574 /* SceneDelegate.swift */,
-				4F00ED872B615A0200C46574 /* ViewController.swift */,
-				4F00ED892B615A0200C46574 /* Main.storyboard */,
 				4F00ED8C2B615A0400C46574 /* Assets.xcassets */,
 				4F00ED8E2B615A0400C46574 /* LaunchScreen.storyboard */,
 				4F00ED912B615A0400C46574 /* Info.plist */,
+				4FDAA8702B63E8AF00F60BF5 /* countries.json */,
+				4F9C5B392B622E9500E2ECE5 /* App */,
 			);
 			path = AstanaTap;
+			sourceTree = "<group>";
+		};
+		4F9C5B392B622E9500E2ECE5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4F00ED832B615A0200C46574 /* AppDelegate.swift */,
+				4F00ED852B615A0200C46574 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		7FD41DA66744612A41611BE1 /* Frameworks */ = {
@@ -103,7 +107,7 @@
 				4F00ED7C2B615A0200C46574 /* Sources */,
 				4F00ED7D2B615A0200C46574 /* Frameworks */,
 				4F00ED7E2B615A0200C46574 /* Resources */,
-				CCA8F3F4B81DB0953C26CEE4 /* [CP] Embed Pods Frameworks */,
+				DD55C15609064BE344855397 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +156,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FDAA8712B63E8AF00F60BF5 /* countries.json in Resources */,
+				4F2D29DD2B62EF8F0047F308 /* Assets.xcassets in Resources */,
 				4F00ED902B615A0400C46574 /* LaunchScreen.storyboard in Resources */,
-				4F00ED8D2B615A0400C46574 /* Assets.xcassets in Resources */,
-				4F00ED8B2B615A0200C46574 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +187,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CCA8F3F4B81DB0953C26CEE4 /* [CP] Embed Pods Frameworks */ = {
+		DD55C15609064BE344855397 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,7 +211,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F00ED882B615A0200C46574 /* ViewController.swift in Sources */,
 				4F00ED842B615A0200C46574 /* AppDelegate.swift in Sources */,
 				4F00ED862B615A0200C46574 /* SceneDelegate.swift in Sources */,
 			);
@@ -216,14 +219,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4F00ED892B615A0200C46574 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F00ED8A2B615A0200C46574 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4F00ED8E2B615A0400C46574 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,11 +358,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4C4KZRT7P4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AstanaTap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -392,11 +387,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4C4KZRT7P4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AstanaTap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

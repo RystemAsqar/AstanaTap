@@ -7,5 +7,5 @@ target 'AstanaTap' do
 
   # Pods for AstanaTap
 
-   pod 'SnapKit'
+   pod 'SignIn', :path => './DevLibraries/SignIn'
 end

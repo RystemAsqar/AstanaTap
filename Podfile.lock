@@ -1,16 +1,16 @@
 PODS:
-  - SnapKit (5.6.0)
+  - SignIn (0.1.0)
 
 DEPENDENCIES:
-  - SnapKit
+  - SignIn (from `./DevLibraries/SignIn`)
 
-SPEC REPOS:
-  trunk:
-    - SnapKit
+EXTERNAL SOURCES:
+  SignIn:
+    :path: "./DevLibraries/SignIn"
 
 SPEC CHECKSUMS:
-  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SignIn: c85c4cd7046f6284559f555ef6d61601e1a63048
 
-PODFILE CHECKSUM: f7a1740916249ed4ff1840c8cf08f5446002aca2
+PODFILE CHECKSUM: ac7d60fc9b5132e1ab9368acd7ab59adfe2f901c
 
 COCOAPODS: 1.14.3

@@ -1,0 +1,6 @@
+framework module SignIn {
+  umbrella header "SignIn-umbrella.h"
+
+  export *
+  module * { export * }
+}
