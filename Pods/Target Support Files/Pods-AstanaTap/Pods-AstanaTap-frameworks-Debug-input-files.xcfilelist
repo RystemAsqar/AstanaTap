@@ -1,2 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-AstanaTap/Pods-AstanaTap-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AppModel/AppModel.framework
+${BUILT_PRODUCTS_DIR}/DashboardView/DashboardView.framework
 ${BUILT_PRODUCTS_DIR}/SignIn/SignIn.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/TabBar/TabBar.framework
+${BUILT_PRODUCTS_DIR}/UserNetwork/UserNetwork.framework

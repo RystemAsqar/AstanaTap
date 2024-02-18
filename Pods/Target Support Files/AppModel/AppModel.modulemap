@@ -1,0 +1,6 @@
+framework module AppModel {
+  umbrella header "AppModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

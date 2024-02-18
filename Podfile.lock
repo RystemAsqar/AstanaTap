@@ -1,16 +1,45 @@
 PODS:
+  - AppModel (0.1.0)
+  - DashboardView (0.1.0):
+    - SnapKit (~> 5.0.0)
   - SignIn (0.1.0)
+  - SnapKit (5.0.1)
+  - TabBar (0.1.0):
+    - DashboardView
+    - SnapKit (~> 5.0.0)
+  - UserNetwork (0.1.0)
 
 DEPENDENCIES:
+  - AppModel (from `./DevLibraries/AppModel`)
+  - DashboardView (from `./DevLibraries/DashboardView`)
   - SignIn (from `./DevLibraries/SignIn`)
+  - TabBar (from `./DevLibraries/TabBar`)
+  - UserNetwork (from `./DevLibraries/UserNetwork`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
 
 EXTERNAL SOURCES:
+  AppModel:
+    :path: "./DevLibraries/AppModel"
+  DashboardView:
+    :path: "./DevLibraries/DashboardView"
   SignIn:
     :path: "./DevLibraries/SignIn"
+  TabBar:
+    :path: "./DevLibraries/TabBar"
+  UserNetwork:
+    :path: "./DevLibraries/UserNetwork"
 
 SPEC CHECKSUMS:
+  AppModel: 0db74f148e58f3fde35abcb67a9f2a63658fb80d
+  DashboardView: bf841d746b29b96c768d01223f15c0ef1ca3fa4a
   SignIn: c85c4cd7046f6284559f555ef6d61601e1a63048
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  TabBar: 561c5b91124949af9febbc7d7b3e887bad1e103f
+  UserNetwork: 1e5f4fc6a43375a54edf2f0d77591e6f384b7d31
 
-PODFILE CHECKSUM: ac7d60fc9b5132e1ab9368acd7ab59adfe2f901c
+PODFILE CHECKSUM: 983d9248b90fcbe2d9f7a83fb9cf291ee03306d0
 
 COCOAPODS: 1.14.3

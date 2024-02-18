@@ -1,0 +1,26 @@
+{
+  "name": "UserNetwork",
+  "version": "0.1.0",
+  "summary": "A short description of UserNetwork.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/RystemAsqar/AstanaTap",
+  "authors": {
+    "Rustem": "bornqazaqi@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/RystemAsqar/AstanaTap",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source_files": [
+    "UserNetwork/Classes/**/*.{h,m,swift,json,csv,strings,xib,storyboard, xcassets, xcdatamodeld}"
+  ],
+  "resource_bundles": {
+    "UserNetwork": [
+      "UserNetwork/**/*.{xcdatamodeld,csv}"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.{h,swift}"
+}

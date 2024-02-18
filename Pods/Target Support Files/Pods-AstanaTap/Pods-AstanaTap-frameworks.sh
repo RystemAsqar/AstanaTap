@@ -176,10 +176,20 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AppModel/AppModel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DashboardView/DashboardView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SignIn/SignIn.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TabBar/TabBar.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UserNetwork/UserNetwork.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AppModel/AppModel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DashboardView/DashboardView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SignIn/SignIn.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TabBar/TabBar.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UserNetwork/UserNetwork.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

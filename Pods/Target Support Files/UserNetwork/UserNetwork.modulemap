@@ -1,0 +1,6 @@
+framework module UserNetwork {
+  umbrella header "UserNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

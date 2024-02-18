@@ -1,0 +1,6 @@
+framework module DashboardView {
+  umbrella header "DashboardView-umbrella.h"
+
+  export *
+  module * { export * }
+}
